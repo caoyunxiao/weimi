@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7531" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="MemberCell" id="KGk-i7-Jjw" customClass="MemberTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="63"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="62"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="touxy.jpg" id="dmV-hh-S6E">
+                        <rect key="frame" x="10" y="8" width="45" height="45"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rankBackImage.png" id="css-TD-wKv">
+                        <rect key="frame" x="74" y="8" width="55" height="20"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="管理员" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="TrM-xt-4nB">
+                        <rect key="frame" x="74" y="8" width="55" height="20"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="WCW-hq-TdK">
+                        <rect key="frame" x="74" y="41" width="238" height="10"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.22745098039215686" green="0.17254901960784313" blue="0.15686274509803921" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="girl.png" id="TVO-cT-hqc">
+                        <rect key="frame" x="235" y="9" width="20" height="18"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="L52-d2-orl">
+                        <rect key="frame" x="257" y="16" width="55" height="30"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <state key="normal" title="加好友" backgroundImage="Group_6.png">
+                            <color key="titleColor" red="0.97647058819999999" green="0.53333333329999999" blue="0.043137254899999998" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                        <connections>
+                            <action selector="isFriend:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="gQg-xX-oh4"/>
+                        </connections>
+                    </button>
+                    <view contentMode="scaleToFill" id="kk4-yY-2QG">
+                        <rect key="frame" x="74" y="62" width="246" height="1"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                        <color key="backgroundColor" red="0.86274509799999999" green="0.85490196080000003" blue="0.89019607840000003" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="南昌小分队队长" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="mll-Hs-7zS">
+                        <rect key="frame" x="137" y="10" width="102" height="15"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="jinyan.png" id="K40-So-EXA">
+                        <rect key="frame" x="36" y="2" width="30" height="30"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    </imageView>
+                </subviews>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="JinYanImageView" destination="K40-So-EXA" id="Yv3-Cp-Kic"/>
+                <outlet property="MemberBackImage" destination="css-TD-wKv" id="OU2-BP-X24"/>
+                <outlet property="MemberClass" destination="TrM-xt-4nB" id="j8l-RR-KVe"/>
+                <outlet property="MemberImage" destination="dmV-hh-S6E" id="fSL-Mr-6iI"/>
+                <outlet property="MemberName" destination="mll-Hs-7zS" id="zCf-nO-HdQ"/>
+                <outlet property="MemberSexAndPlace" destination="WCW-hq-TdK" id="mab-Pt-LaL"/>
+                <outlet property="isFriend" destination="L52-d2-orl" id="D6Z-V8-ycW"/>
+                <outlet property="sexImage" destination="TVO-cT-hqc" id="sIo-UK-ZHC"/>
+            </connections>
+            <point key="canvasLocation" x="300" y="178.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Group_6.png" width="51" height="30"/>
+        <image name="girl.png" width="64" height="64"/>
+        <image name="jinyan.png" width="64" height="64"/>
+        <image name="rankBackImage.png" width="135" height="55"/>
+        <image name="touxy.jpg" width="2142" height="1665"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

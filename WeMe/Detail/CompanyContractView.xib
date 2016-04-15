@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="5056" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="CompanyContractView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="1436"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="道客里程合约" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eVR-KL-w6g">
+                    <rect key="frame" x="72" y="0.0" width="177" height="21"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="320" translatesAutoresizingMaskIntoConstraints="NO" id="jQ5-Vg-0Jf">
+                    <rect key="frame" x="0.0" y="29" width="320" height="1407"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <mutableString key="text">道客快分享是全球首个维基交通社区,理想是让大家走的更快，更快乐！
+
+社区加入条件：
+1. 自愿在所驾车辆安装WEME终端，并自愿开放WEME终端采集的匿名数据；
+2. 自愿接收信息推送，包含社区互动、系统服务和赞助内容等；
+3. 认同、遵守本合约的规则并缴纳履约押金的合法驾驶者。
+
+加入社区后，成员免费获得：
+• WEME终端18个月使用权；
+• 自动信息推送；
+• 路上弹性社交服务。
+
+随时可退的履约押金：
+1. 履约押金是平衡成员对社区数据贡献、激励超额贡献的手段。
+2. 履约押金为人民币299元，加入合约满18个月，WEME终端所有权自动转移给成员，同时返还履约押金。
+3. 成员有权在签约后任意一个月退出本合约，并按照合约里程的约定，在提出申请的次月15日获得返还的履约押金。
+
+每月合约里程：
+1. 每月有效里程300公里的合约里程是社区衡量成员个人数据贡献的基本标准。达到合约里程的成员可免费享受社区服务。
+2. 每获得1公里有效里程可获得里程奖励，每公里奖励0.01元，每个社区账号每月最高可获得50元里程奖励。最高可获得的里程奖励金额将随账号的等级决定、或整个道客社区的运营策略决定，最终解释权归道客快分享。
+3. 未达到合约里程下月仍可继续免费使用，但在返还押金时每个未达标的月将扣除合约每月返还的金额15元，用于奖励超额完成里程合约的其他成员。如成员在合约期内全部达标或超标，则获得299元全额返还；如果有部分月没有达标，则按照未达标月数*15元/月，从299元押金中扣减后返还。
+4. 连续一个月不开机或无数据，社区将在三次提醒无改善后自动暂停次月免费服务，也不再承担使用费用。如成员仍愿意继续履约，须与社区客服联系，重新开通。如不愿意继续履约，则可申请返还押金。
+5. 连续两个月不开机或无数据，且三次提醒无改善将被视作自动放弃合约，社区有权冻结成员所有的社区账户并要求其退还WEME终端。如成员未在其社区账户冻结之日起一个月内申请返还，视作自动放弃押金。
+6.不同的渠道获取的weme终端，可能会存在不同的合约里程、每月返还金额、押金总数、合约期限，以上为官方标准合约条款。
+
+合约相关名字解释：
+1. 有效里程：有效里程是指系统根据收到的GPS数据包解析计算后的里程。有效里程应当小于或等于实际里程。移动网络信号弱或丢失、隧道内、地下停车库、weme安装位置不当，都有可能造成GPS的丢失。
+2. 月：指自然月，从每个自然月1日00:00:00起至每个自然月最后一日23:59:59为止。
+3. 合约里程从成员领取WEME终端后的第一个月的第一天开始计算，此前日期不计合约里程，且可以免费使用。
+
+隐私及数据用途约定：
+
+道客快分享社区专注于群体数据的处理计算，并承诺无论任何情况均不单独出售成员个人资料，不将成员的数据贡献用于未经授权的用途，且将尽最大努力保证成员个人资料的安全。
+1. 道客的数据贡献包含：
+• 不匹配个人资料的位置信息、速度信息和加速度信息、里程轨迹以及海拔信息，由WEME终端自动上传并匿名保存。这些数据将通过与其他成员上传数据以及多种其他数据源混合，并经过社区系统计算处理，生成路况预报、交通压力图等数据产品。
+• 不匹配真实姓名的社区分享由成员主动发起，并由系统自动记载，用于帮助其他交通参与者或与其他成员进行弹性社交互动。
+这些分享可能会被同步到其他网络服务或媒体中，或经社区编辑人员采编后转载至其他网络服务或媒体中，社区不再逐条通知也不付酬。
+如果成员主动授权，则以成员提供的署名或身份进行分享，社区不承担任何责任。
+• 成员使用系统服务、人工服务以及维修售后等服务记录。
+
+2. 成员主动上传且仅用于服务成员本人的信息包含：
+• 个人资料，由成员主动填写，仅仅用于为本人服务。且仅在成员主动请求或订阅系统服务时，才会将个人资料与位置信息等数据贡献进行匹配。更多细则请查看《“微密APP”软件许可及服务协议》
+• 急救信息，由成员主动填写，仅在成员需要医疗救助时才可向法定救助机构披露。
+
+服务可能无法完全响应的部分情况（包含且不仅限于）：
+
+• WEME终端须正确安装、安全使用、及时充电。为了您的安全请尽量避免在驾车过程中频繁操作，若需要使用手机应用或其他复杂服务，请停车后进行操作。
+
+• 由于WEME终端可能在不同用户间流转，所以社区只能保证提供给您的道客装备功能正常，不能保证为全新终端。
+
+• WEME终端及我们的服务基于由电信运营商提供的通信网络，如出现网络信号或资费不足等原因可能导致无法正常服务，造成语音信息推送出现时间滞后性或通话功能受限，从而造成您遭受损失的，我们将不承担任何责任也无法对您进行任何补偿。
+
+• WEME终端及我们的服务基于全球卫星定位系统（下称GPS），如出现GPS信号不足导致无法正常使用社区服务，社区将不进行任何补偿。
+
+• 社区的兴趣点查询、路线查询等服务来源于社区已经获得的最新地图信息、社区其他成员的贡献或合作商提供的信息，不保证没有差错或遗漏，成员需要遵守交通及道路法律法规并按实际道路状况驾驶。
+
+• 来自社区的实时路况信息、附近实用信息等极有可能是由社区其他道客提供的，非官方发布，由分享者承担相应责任。参考此类信息时请您结合实际道路状况自行判断。
+
+• 其他某些不可控或不可预计的问题也可能导致社区无法在某一特定时间或地点向成员提供服务，或可能影响服务质量。例如（包括但不仅限于）：山丘、高楼、隧道、天气、成员所驾车辆的电气系统的设计及构造、交通事故造成的车辆或WEME终端的损坏。
+
+• 对于那些由于无法以合理措施预防而造成的服务延迟或停滞，以及由自然灾害或超出社区控制能力的因素所造成的服务延迟或停滞，社区不承担相应责任。例如（包含但不仅限于）：公用事业电气故障、战争行为、政府措施、恐怖袭击、骚乱暴动、劳动力短缺或关联设备故障（包括互联网、数据中心、系统服务器、电脑、远程通信或其他故障）。
+社区保留修改本合约的权力。如有修改将通过成员注册时登记的信息进行告知，如收到通知之日起三日内，未表示异议则视作接受修改。
+
+本合约生效条件：支付履约押金。
+本合约为标准合约，部分达标数值可能在不同的推广渠道有所不同，以实际为准。</mutableString>
+                    <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+        </view>
+    </objects>
+</document>

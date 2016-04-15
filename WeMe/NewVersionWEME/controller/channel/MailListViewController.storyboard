@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="qFi-WX-heC">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <scenes>
+        <!--Mail List View Controller-->
+        <scene sceneID="u9n-mr-GNR">
+            <objects>
+                <viewController id="qFi-WX-heC" customClass="MailListViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="vgH-hy-EV8"/>
+                        <viewControllerLayoutGuide type="bottom" id="Yan-xu-LUA"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Aph-qH-IJa">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="DTC-xL-6pD">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="DTC-xL-6pD" secondAttribute="bottom" id="2eh-it-eRp"/>
+                            <constraint firstAttribute="trailing" secondItem="DTC-xL-6pD" secondAttribute="trailing" id="CqI-fA-UuJ"/>
+                            <constraint firstItem="DTC-xL-6pD" firstAttribute="leading" secondItem="Aph-qH-IJa" secondAttribute="leading" id="GBg-hK-Elj"/>
+                            <constraint firstItem="DTC-xL-6pD" firstAttribute="top" secondItem="Aph-qH-IJa" secondAttribute="top" id="TuG-Az-Mnn"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="_table" destination="DTC-xL-6pD" id="kyQ-Gt-GV1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dLs-Gf-cx9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="142" y="286"/>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

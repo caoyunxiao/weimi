@@ -1,0 +1,311 @@
+//
+//  Prefix header
+//
+//  The contents of this file are implicitly included at the beginning of every source file.
+//
+
+#import <Availability.h>
+
+#ifndef __IPHONE_3_0
+#warning "This project uses features only available in iOS SDK 3.0 and later."
+#endif
+
+#ifdef __OBJC__
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#import "AFNetworking.h"
+#import "AFHTTPRequestOperationManager.h"
+#import "AFHTTPSessionManager.h"
+#import "PersonInfo.h"
+#import "HTTPManger.h"
+#import "FamilyInfo.h"
+#import "ModelView.h"
+#import "NSString+Time.h"
+#import "NSNull+NullCast.h"
+#import "CONST.h"
+#import "NetworkErrorView.h"
+#import "CFShareCircleView.h"
+#import "MBProgressHUD.h"
+#import "RequestEngine.h"
+#import "MessageError.h"
+#import "DBOperation.h"
+#import "UIImageView+WebCache.h"
+#import "MJRefresh.h"
+#import "Request1617.h"
+#import "NewRootViewController.h"
+#import "HeaderModel.h"
+#import "MobClick.h"
+#import "UIImageView+YJCacheImage.h"
+#import "Masonry.h"
+#import "Custom.h"
+#import "PlistHelper.h"
+#import "MBProgressHUD+MJ.h"
+#import "UMSocial.h"
+#import "Tool.h"
+#import "UIImage+CJ.h"
+#import "MJExtension.h"
+#endif
+
+
+// 线上地址
+//#define LOGINURL(url) [NSString stringWithFormat:@"http://wemeapp.mirrtalk.com/WeMe/%@",url]
+
+//#define LOGINURL(url) [NSString stringWithFormat:@"http://192.168.1.13:8021/WeMe/%@",url]
+//测试公网
+#define LOGINURL1(url) [NSString stringWithFormat:@"http://test.wemeapp.mirrtalk.com/WeMe/%@",url]
+//线上
+#define LOGINURL(url) [NSString stringWithFormat:@"http://wemeapp2.mirrtalk.com/WeMe/%@",url]
+//#define LOGINURL(url) [NSString stringWithFormat:@"http://test.wemeapp.mirrtalk.com/WeMe/%@",url]
+/**
+ *  搜索历史纪录保存的文件的路径
+ *
+ */
+#define searchHistoryDataPath [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES)[0] stringByAppendingPathComponent:@"searchHistory.plist"]
+
+/**
+ *  用户自定义键本地文件
+ *
+ *  @param NSDocumentDirectory <#NSDocumentDirectory description#>
+ *  @param NSUserDomainMask    <#NSUserDomainMask description#>
+ *  @param YES                 <#YES description#>
+ *
+ *  @return <#return value description#>
+ */
+#define userKeyInfoDataPath [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES)[0] stringByAppendingPathComponent:@"userKeyInfo.plist"]
+
+//保存推送消息
+#define getPushMessageArray @"message"
+#define BIND @"bind"
+
+//密点
+#define kMiDian @"midian"
+//微点
+#define kWeiDian @"weidian"
+
+#define kNameString @"kNameString"
+
+#define kpassworldString @"kpassworldString"
+
+#define kDateString @"dateString"
+
+#define kTravelString @"travelString"
+
+#define kLegal @"Legal"
+
+#define LegalObserverName @"LegalObserverName"
+
+#define kBound @"Bound"
+
+#define BoundObserverName @"BoundObserverName"
+
+#define kCash @"kCash"
+
+#define kWXBoundObserverName @"WXBoundObserverName"
+#define kRankingObserverName @"RankingObserverName"
+
+//本地字段
+#define kFamilyPhoneOrIMEI @"familyPhoneOrIMEI"
+#define kFamilyRecAcID @"familyRecAcID"
+#define kPhoneNickname @"phoneNickname"
+#define kFamilyRecNickname @"familyRecNickname"
+// 等级  等级名字
+#define kGrade @"grade"
+#define kGradeTitle @"gradeTitle"
+
+#define kWXUID @"wxUid"
+
+
+
+
+//nil login界面  0 成功  1 连线界面
+#define kAppStation @"appStation"
+
+
+//通知名称
+#define PledgePwdObserver @"pledgePwdObserver"
+
+#define PointsObserver @"pointsObserver"
+
+#define PushMassageObserver @"pushMassageObserver"
+
+#define IMEIKey @"mirrtalk"
+
+#define kWidth [UIScreen mainScreen].bounds.size.width
+
+
+
+//文件过期时间
+#define CACHE_FILE_TIMEOUT (15*24*60*60)
+
+
+
+//保存Icon的文件夹;
+#define kIcon [NSString stringWithFormat:@"%@/icon",NSHomeDirectory()]
+
+
+// 标题字体大小与颜色;
+#define kTitleFont  [UIFont boldSystemFontOfSize:18]
+
+#define kTitleColor [UIColor colorWithRed:205/255 green:205/255 blue:205/255 alpha:1]
+
+// 内容字体大小与颜色;
+#define kLevelOneFont [UIFont systemFontOfSize:16]
+
+#define kLevelTwoFont [UIFont systemFontOfSize:14]
+
+#define kLevelThreeFont [UIFont systemFontOfSize:12]
+
+#define kLevelFourFont [UIFont systemFontOfSize:10]
+
+#define kLevelOneColor [UIColor colorWithRed:58/255.0 green:42/255.0 blue:61/255.0 alpha:1]
+
+#define kLevelTwoColor [UIColor blackColor]
+
+//[UIColor colorWithRed:57/255.0 green:45/255.0 blue:37/255.0 alpha:1]
+
+#define kLevelThreeColor [UIColor colorWithRed:58/255.0 green:44/255.0 blue:40/255.0 alpha:0.85]
+
+#define kLevelFourColor [UIColor colorWithRed:136/255.0 green:146/255.0 blue:148/255.0 alpha:1]
+
+//屏幕的物理高度和宽度
+#define ScreenWidth    [UIScreen mainScreen].bounds.size.width
+#define ScreenHeight   [UIScreen mainScreen].bounds.size.height
+
+#define iOS7 [[[UIDevice currentDevice]systemVersion] floatValue] >= 7.0
+
+
+//百度地图Key
+#define kBaiDuMapKey @"icP1hxTHGXz5Irl0QQvOBH3t"
+
+#define kUserMidian
+
+#define BINDWMSUCCESS @"success"
+
+
+#define kDB_People @"users"//表的名字
+#define kName @"name"//姓名
+#define kSex @"sex"//性别
+#define kNickName @"nickname"//昵称
+#define kPhoneNumber @"phonenumber"//电话号码
+#define kArea @"area"//区域
+#define kLicenseNumber @"licensenumber"//车牌号
+#define kDrivingLicense @"drivinglicense"//驾照号
+#define kDegree @"degree"//等级
+#define kHeadImageUrl @"headimageurl"//头像url
+#define kHeadImageData @"headimagedata"//
+#define kMiDian @"midian"//密点数量
+#define kWeDian @"weidian"//微点数量
+#define kImei @"imei"//imei号
+#define kAccountID @"accountID"
+#define kIDNumber @"kIDNumber" //身份证
+#define kBirthday @"kBirthday" //出生日期
+
+
+#define KSys @"sys"//系统类型
+#define KSysversion @"sysversion"//系统版本
+#define KApp @"app"//产品类型
+#define Kappversion @"appversion"//产品版本
+#define KPrimarykey @"primarykey"//设备号 udid
+#define KNettype @"nettype"//网络类型
+#define KDevicetype @"devicetype"//手机型号
+#define KAccountID @"accountID"//账户ID
+#define KLat @"lat"//
+#define KLon @"lon"//
+
+
+#define KNeedFriend @"needFriend"//允许被添加为好友
+#define KNeedCertify @"needCertify"//需要验证
+
+#define STRING_SIZE(_width_, _string_) [_string_ boundingRectWithSize:CGSizeMake(_width_, MAXFLOAT) options:NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName: [UIFont systemFontOfSize:17]} context:nil].size;
+
+
+#define MYSELF_HEAD_IMAGE_KEY @"myself_head_image_key"//个人头像本地
+
+#define HasUpDatePhone @"upPhoney"//是否更新了通讯录
+
+#define CheckWeMeBind @"wimeiBind"//微密是否绑定
+
+#define ZhuceAccountId @"accountID"
+
+#define clearMessageCenterNotifigation @"clear"//清空消息成功后
+
+
+#define UserDefaults ([NSUserDefaults standardUserDefaults])
+
+/**
+ *  置空通知名字
+ *
+ *  @return <#return value description#>
+ */
+#define emptyNotificationName @"emptyAddBtn"
+
+/**
+ *  刷新+键设置
+ *
+ *  @return <#return value description#>
+ */
+#define refreshNotificationName @"refreshAddBtn"
+
+#define togetherTalkNofitificationName @"refreshTogeTherTalk"
+
+/**
+ *  刷新设备的通知名称
+ *
+ *  @return <#return value description#>
+ */
+#define refreshDeviceNotificationName @"refreshDevice"
+
+/**
+ *  rgb颜色
+ *
+ *  @param R <#R description#>
+ *  @param G <#G description#>
+ *  @param B <#B description#>
+ *
+ *  @return <#return value description#>
+ */
+#define getRGB(R,G,B) [UIColor colorWithRed:R/255.0 green:G/255.0 blue:B/255.0 alpha:1]
+
+//友盟分享appkey
+#define UMAPPKey @"5600f30f67e58e79930025de"
+
+//appstore获取版本的url
+#define getAppInfoUrl @"https://itunes.apple.com/lookup?id=914926728"
+
+//app更新地址KEY
+#define appstoreUpdateUrlKey @"trackViewUrl"
+
+//刷新我的设备
+#define refreshMyDeviceKey @"myDeviceRefresh"
+
+#define refreshMyViewUIKey @"RefreshMyViewMainUI"
+
+#define ANCHORIMGWIDTH ([UIApplication sharedApplication].windows.lastObject.frame.size.width-1)/2
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

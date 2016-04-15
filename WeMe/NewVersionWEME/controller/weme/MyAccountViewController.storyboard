@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="l6R-tq-KWw">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <scenes>
+        <!--My Account View Controller-->
+        <scene sceneID="Ell-W0-uNM">
+            <objects>
+                <viewController id="l6R-tq-KWw" customClass="MyAccountViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="SJm-cu-jaw"/>
+                        <viewControllerLayoutGuide type="bottom" id="w1n-dX-LRy"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="SQg-Mo-HGe">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Yxf-uE-l5z">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <subviews>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HMn-Ld-kYa">
+                                        <rect key="frame" x="13" y="420" width="299" height="86"/>
+                                        <string key="text">密点：道客社区通用货币，可用于道客商城、购买保险、充值、体现、捐献等消费。消费时100密点可抵现1元。                                                                           微点：道客社区指定商户的货币，只可以在指定商户消费。指定商户消费时，100微点可抵现1元。</string>
+                                        <color key="textColor" red="0.29823626889999999" green="0.29823626889999999" blue="0.29823626889999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="szE-Mn-ptB">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="100"/>
+                                        <subviews>
+                                            <button opaque="NO" tag="300" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TZZ-I6-idG">
+                                                <rect key="frame" x="12" y="39" width="92" height="83"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <state key="normal" title="余额">
+                                                    <color key="titleColor" red="0.90336963380000002" green="0.90336963380000002" blue="0.90336963380000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="AccountButtonAction:" destination="l6R-tq-KWw" eventType="touchUpInside" id="hlq-UY-nwq"/>
+                                                </connections>
+                                            </button>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="道客商城-余额.png" translatesAutoresizingMaskIntoConstraints="NO" id="CMf-6k-stO">
+                                                <rect key="frame" x="38" y="32" width="40" height="40"/>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="道客商城-账单.png" translatesAutoresizingMaskIntoConstraints="NO" id="vUS-WN-d9N">
+                                                <rect key="frame" x="248" y="30" width="40" height="40"/>
+                                            </imageView>
+                                            <button opaque="NO" tag="301" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cfI-CZ-dOa">
+                                                <rect key="frame" x="222" y="32" width="92" height="98"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <state key="normal" title="账单">
+                                                    <color key="titleColor" red="0.90336963380000002" green="0.90336963380000002" blue="0.90336963380000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="AccountButtonAction:" destination="l6R-tq-KWw" eventType="touchUpInside" id="DRs-QJ-Mwo"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.29823626889999999" green="0.29823626889999999" blue="0.29823626889999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    </view>
+                                    <button opaque="NO" tag="302" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FV7-G7-yeH">
+                                        <rect key="frame" x="0.0" y="100" width="106" height="104"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <state key="normal">
+                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="AccountButtonAction:" destination="l6R-tq-KWw" eventType="touchUpInside" id="1qT-ru-ZJz"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="303" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2fv-sR-cGb">
+                                        <rect key="frame" x="108" y="100" width="105" height="104"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <state key="normal">
+                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="AccountButtonAction:" destination="l6R-tq-KWw" eventType="touchUpInside" id="E9x-cx-dvr"/>
+                                        </connections>
+                                    </button>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="道客商城-购买车险.png" translatesAutoresizingMaskIntoConstraints="NO" id="6ZF-Un-oIF">
+                                        <rect key="frame" x="139" y="117" width="40" height="40"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="意外险" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6GQ-hG-x5P">
+                                        <rect key="frame" x="132" y="165" width="60" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" tag="304" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UkD-QB-DSI">
+                                        <rect key="frame" x="215" y="100" width="105" height="104"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <state key="normal">
+                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="AccountButtonAction:" destination="l6R-tq-KWw" eventType="touchUpInside" id="cVx-ch-iCm"/>
+                                        </connections>
+                                    </button>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="道客商城-保险预购金.png" translatesAutoresizingMaskIntoConstraints="NO" id="aLr-fY-hGB">
+                                        <rect key="frame" x="245" y="117" width="40" height="40"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="保险预购金" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xrr-nT-pAZ">
+                                        <rect key="frame" x="228" y="165" width="75" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" tag="305" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fXP-O3-iuz">
+                                        <rect key="frame" x="0.0" y="205" width="106" height="104"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <state key="normal">
+                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="AccountButtonAction:" destination="l6R-tq-KWw" eventType="touchUpInside" id="qqo-Sp-und"/>
+                                        </connections>
+                                    </button>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="道客账户-捐献社区.png" translatesAutoresizingMaskIntoConstraints="NO" id="v7Z-Ar-YsH">
+                                        <rect key="frame" x="31" y="222" width="40" height="40"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="捐献社区" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NbK-2s-iGu">
+                                        <rect key="frame" x="21" y="270" width="64" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" tag="306" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ldY-hF-C7V">
+                                        <rect key="frame" x="108" y="205" width="105" height="104"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <state key="normal">
+                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="AccountButtonAction:" destination="l6R-tq-KWw" eventType="touchUpInside" id="GAQ-yI-5Vy"/>
+                                        </connections>
+                                    </button>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="道客商场-充值.png" translatesAutoresizingMaskIntoConstraints="NO" id="Htx-j6-0t1">
+                                        <rect key="frame" x="139" y="222" width="40" height="40"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="充值" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e47-iG-u6U">
+                                        <rect key="frame" x="138" y="270" width="42" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" tag="307" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a1g-AM-KPf">
+                                        <rect key="frame" x="215" y="205" width="105" height="104"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <state key="normal">
+                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="AccountButtonAction:" destination="l6R-tq-KWw" eventType="touchUpInside" id="wEz-L9-xpA"/>
+                                        </connections>
+                                    </button>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="道客商城-提现.png" translatesAutoresizingMaskIntoConstraints="NO" id="dCL-uU-tSF">
+                                        <rect key="frame" x="245" y="222" width="40" height="40"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="提现" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r1d-nS-0fg">
+                                        <rect key="frame" x="244" y="270" width="42" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="道客商城-商城.png" translatesAutoresizingMaskIntoConstraints="NO" id="hQR-nz-tAi">
+                                        <rect key="frame" x="33" y="118" width="40" height="40"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="商城" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MHW-ld-Dfq">
+                                        <rect key="frame" x="32" y="166" width="42" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.90336963380000002" green="0.90336963380000002" blue="0.90336963380000002" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <connections>
+                        <outlet property="daokeBill" destination="vUS-WN-d9N" id="71b-fY-PpV"/>
+                        <outlet property="daokeShop" destination="CMf-6k-stO" id="0aD-Kk-nh8"/>
+                        <outlet property="scroll" destination="Yxf-uE-l5z" id="5aW-gh-dEX"/>
+                        <outlet property="textView" destination="HMn-Ld-kYa" id="OUw-1U-uYI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="U5M-3v-Ma3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-4" y="33"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="道客商场-充值.png" width="1024" height="1024"/>
+        <image name="道客商城-余额.png" width="1024" height="1024"/>
+        <image name="道客商城-保险预购金.png" width="1024" height="1024"/>
+        <image name="道客商城-商城.png" width="1025" height="1024"/>
+        <image name="道客商城-提现.png" width="1024" height="1024"/>
+        <image name="道客商城-账单.png" width="1024" height="1024"/>
+        <image name="道客商城-购买车险.png" width="1024" height="1024"/>
+        <image name="道客账户-捐献社区.png" width="1024" height="1024"/>
+    </resources>
+</document>

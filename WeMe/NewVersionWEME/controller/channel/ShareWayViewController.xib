@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7702" systemVersion="14C1510" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ShareWayViewController">
+            <connections>
+                <outlet property="chatButton" destination="49v-tT-meC" id="uOq-WP-TX7"/>
+                <outlet property="historyButton" destination="NF1-L1-8WY" id="cbK-LA-MiA"/>
+                <outlet property="shareButton" destination="iMO-WS-yoC" id="waN-Xe-imx"/>
+                <outlet property="tableView" destination="t3U-4r-Mih" id="v8Y-ij-6Si"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="t3U-4r-Mih">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="531"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="nwu-ML-ZZF"/>
+                        <outlet property="delegate" destination="-1" id="aQG-TC-dkM"/>
+                    </connections>
+                </tableView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DJo-XC-efE">
+                    <rect key="frame" x="0.0" y="534" width="320" height="34"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="49v-tT-meC">
+                            <rect key="frame" x="0.0" y="0.0" width="46" height="34"/>
+                            <state key="normal" backgroundImage="wexn.png">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iMO-WS-yoC">
+                            <rect key="frame" x="46" y="0.0" width="133" height="34"/>
+                            <state key="normal">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NF1-L1-8WY">
+                            <rect key="frame" x="180" y="0.0" width="140" height="34"/>
+                            <state key="normal">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="34" id="jfB-fy-pzz"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="DJo-XC-efE" firstAttribute="top" secondItem="t3U-4r-Mih" secondAttribute="bottom" constant="3" id="09Q-f3-9yp"/>
+                <constraint firstItem="t3U-4r-Mih" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="2N3-Qq-xf2"/>
+                <constraint firstItem="DJo-XC-efE" firstAttribute="top" secondItem="t3U-4r-Mih" secondAttribute="bottom" constant="3" id="AKY-Vz-Z7h"/>
+                <constraint firstAttribute="trailing" secondItem="t3U-4r-Mih" secondAttribute="trailing" id="DK9-c8-dRu"/>
+                <constraint firstAttribute="trailing" secondItem="DJo-XC-efE" secondAttribute="trailing" id="a8b-GW-oAO"/>
+                <constraint firstItem="DJo-XC-efE" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="es6-OZ-mbG"/>
+                <constraint firstAttribute="bottom" secondItem="DJo-XC-efE" secondAttribute="bottom" id="lAc-D0-0rW"/>
+                <constraint firstItem="t3U-4r-Mih" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="ux3-Uo-1po"/>
+            </constraints>
+            <point key="canvasLocation" x="257" y="164"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="wexn.png" width="62" height="58"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
